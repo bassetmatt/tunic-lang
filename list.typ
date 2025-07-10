@@ -44,6 +44,12 @@
   say: 0b110000001001, // "Sa"cred
   see: 0b111011011001, // "Se"cret
   koh: 0b111011100000, // "Ca"lled
+  "in": 0b111110100, // "In"to
+  ka: 0b101000101011, // "Ca"st | Could be "Lo"st
+  po: 0b11011001011, // Source: ?
+  m: 0b110000,
+  un: 0b1111110100, // Op"en" "un"-XX
+  op: 0b11111001011, // "Op"en
 )
 
 #let phon = phon1 + phon2
@@ -66,6 +72,7 @@
   all: (phon.o, phon.l),
   was: (phon.wo, phon.z),
   "and": (phon.an, phon.d),
+  hole: (phon.ho, phon.l),
 )
 
 #let words2 = (
@@ -73,6 +80,12 @@
   sacred: (phon.say, phon.k, phon.reh, phon.d),
   secrets: (phon.see, phon.k, phon.reh, phon.t, phon.s),
   called: (phon.koh, phon.l, phon.d),
+  into: (phon.in, phon.too),
+  cast: (phon.ka, phon.s, phon.t), // Could be "lost"
+  tomb: (phon.too, phon.m),
+  untombed: (phon.un, phon.too, phon.m, phon.d),
+  open: (phon.op, phon.un),
+  opened: (phon.op, phon.un, phon.d),
 )
 
 #let words_letter = (
@@ -83,6 +96,7 @@
   an: (phon.an,),
   of: (phon.of,),
   they: (phon.they,),
+  "in": (phon.in,),
 )
 
 #let words = words1 + words2 + words_letter
@@ -95,12 +109,12 @@
   t1: 0b111010110000,
   t2: 0b110011000000,
   t3: 0b100000100100,
-  t4: 0b100100101011, // Reverse of
+  // t4: 0b100100101011, // Reverse of
   t5: 0b10000101000,
-  t6: 0b110000001100,
+  // t6: 0b110000001100, Mistaken for t, replaced by t76
   t7: 0b10010001000,
   t8: 0b1011000010,
-  t9: 0b110011011000, // 2x
+  t9: 0b110011011000,
   t10: 0b11011001101,
   t11: 0b110011001100,
   t12: 0b11000001011,
@@ -120,7 +134,7 @@
   t28: 0b11010111111,
   t29: 0b111000011001,
   t30: 0b110000001011,
-  t31: 0b110000,
+  // t31: 0b110000, // Became "m"
   t32: 0b101011100001,
   t33: 0b1011001101,
   t34: 0b111100100111,
@@ -139,7 +153,48 @@
   t47: 0b111111000001,
   t48: 0b100011100100,
   t49: 0b100000111111,
-  // t50: 0b11011000110,
+  // t50: 0b1111110100, // Became "un"
+  // t51: 0b101000101011, // Became ka
+  t52: 0b110011011011,
+  t53: 0b101000101001,
+  t54: 0b10000011011,
+  t55: 0b10000101010,
+  t56: 0b101010100000,
+  t57: 0b101111110001,
+  t58: 0b111011000001, // Lee ? Holy
+  t59: 0b1000110101,
+  t60: 0b11110100,
+  t61: 0b101001101000,
+  t62: 0b11011001111,
+  t63: 0b110000001000,
+  t64: 0b11011001100,
+  t65: 0b11001111100,
+  t66: 0b11011001010,
+  t67: 0b111000100011,
+  t68: 0b10000011001,
+  t69: 0b101001100000,
+  t70: 0b110000001010,
+  // t71: 0b11111001011, // Became op
+  t72: 0b101011100101,
+  t73: 0b11010001100,
+  t74: 0b100100100011,
+  t75: 0b111001001011,
+  t76: 0b110000001100,
+  t77: 0b110000000010,
+  t78: 0b10100001101,
+  t79: 0b110011110000, // Ha?
+  t80: 0b1001110111,
+  t81: 0b1010000011,
+  t82: 0b100111010000,
+  t83: 0b11001011000,
+  t84: 0b1011001110,
+  t85: 0b111000001011,
+  t86: 0b10011001100,
+  t87: 0b101111100111,
+  t88: 0b11000111111,
+  t89: 0b11011001110,
+  // t90: 0b111110100t,
+)
 )
 
 // Words of which I understand the sense but I'm not sure about pronounciation
@@ -166,5 +221,7 @@
 // Words repeated but I have no other clues about
 #let pseudo-words = (
   w1: (tmp.t7, tmp.t8),
-  w2: (tmp.t9, tmp.t10), // City?
+  noun1: (tmp.t9, tmp.t10), // City?
+  verb1: (tmp.t42, phon.s, phon.ko, tmp.t43), // Verb radical
+  people: (tmp.t5, phon.say), // Name of the people?
 )

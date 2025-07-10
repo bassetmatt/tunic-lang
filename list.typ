@@ -50,6 +50,8 @@
   m: 0b110000,
   un: 0b1111110100, // Op"en" "un"-XX
   op: 0b11111001011, // "Op"en
+  bee: 0b101011100001, // "Be"come
+  wee: 0b1011001101, // Bet"wee"n
 )
 
 #let phon = phon1 + phon2
@@ -86,6 +88,9 @@
   untombed: (phon.un, phon.too, phon.m, phon.d),
   open: (phon.op, phon.un),
   opened: (phon.op, phon.un, phon.d),
+  alll: (phon.o, phon.l, phon.l), // ???
+  become: (phon.bee, phon.ko, phon.m),
+  between: (phon.bee, phon.t, phon.wee, phon.n),
 )
 
 #let words_letter = (
@@ -135,8 +140,8 @@
   t29: 0b111000011001,
   t30: 0b110000001011,
   // t31: 0b110000, // Became "m"
-  t32: 0b101011100001,
-  t33: 0b1011001101,
+  // t32: 0b101011100001, // Became "Be"
+  t33: 0b1011001101, // Became "wee"
   t34: 0b111100100111,
   t35: 0b110111100100,
   t36: 0b101001111111,
@@ -193,7 +198,27 @@
   t87: 0b101111100111,
   t88: 0b11000111111,
   t89: 0b11011001110,
-  // t90: 0b111110100t,
+  t90: 0b111001001011,
+  t91: 0b110000001111,
+  t92: 0b111100000001,
+  t93: 0b1000110011,
+  t94: 0b1110,
+  t95: 0b11111001100,
+  t96: 0b10000111111,
+  t97: 0b10100001011,
+  t98: 0b10111001111,
+  t99: 0b111011001000,
+  t100: 0b110111100100,
+  t101: 0b1000110111, // Na? Neh
+  t102: 0b1011001110,
+  t103: 0b11110000,
+  t104: 0b110000111100,
+  t105: 0b100001101000,
+  t106: 0b1011110111, // He?
+  t107: 0b10011101000,
+  t108: 0b111010000111,
+  t109: 0b100111101011,
+  t110: 0b101011110000,
 )
 )
 
@@ -224,4 +249,6 @@
   noun1: (tmp.t9, tmp.t10), // City?
   verb1: (tmp.t42, phon.s, phon.ko, tmp.t43), // Verb radical
   people: (tmp.t5, phon.say), // Name of the people?
+  cathedral: (phon.ka, tmp.t59, tmp.t60, tmp.t61, phon.l),
+  p18n: (phon.p, tmp.t18, phon.n), // P[ ]n, always after cathedral
 )

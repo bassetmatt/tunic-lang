@@ -59,10 +59,10 @@
     words.and,
     (tmp.t29, phon.t),
     pseudo-words.w1,
-    (phon.f, tmp.t30, phon.m),
+    (phon.f, tmp.t30, phon.m), // From ??
     words.the,
     (phon.s, phon.pay, tmp.t9, phon.z),
-    (tmp.t32, phon.t, tmp.t33, phon.n),
+    words.between,
     sym.bullet,
   ),
 )
@@ -108,8 +108,8 @@
     (tmp.t58, tmp.t43),
     words.in,
     words.the,
-    (phon.ka, tmp.t59, tmp.t60, tmp.t61, phon.l), // Cathedral ?
-    (phon.p, tmp.t18, phon.n),
+    pseudo-words.cathedral, // Cathedral ?
+    pseudo-words.p18n,
     words.a,
     (phon.s, tmp.t62, tmp.t63),
     words.of,
@@ -183,15 +183,72 @@
   (
     words.the,
     (tmp.t58, tmp.t43),
-    (tmp.t87, tmp.t8, tmp.t84, phon.k, phon.t),
+    (tmp.t87, tmp.t8, tmp.t84, phon.k, phon.t), // Attacked?
     "!",
     words.the,
     (tmp.t83, phon.l, phon.k, tmp.t30, phon.m),
-    (tmp.t88, tmp.t89, phon.d),
+    (tmp.t88, tmp.t89, phon.d), // Died?
     "!",
     words.a,
     words.hole,
     words.in,
+  ),
+  (
+    (phon.t, tmp.t90, tmp.t76),
+    words.alll,
+    (tmp.t91, phon.n, tmp.t16),
+    words.open,
+    words.and,
+    (tmp.t92,),
+    (tmp.t93, tmp.t19),
+    words.of,
+    (tmp.t42, phon.s, phon.k, tmp.t94, tmp.t95),
+  ),
+  (
+    (tmp.t53, phon.n, phon.t, tmp.t30, tmp.t42, phon.k, tmp.t96, phon.n, tmp.t3),
+    words.all,
+    (tmp.t59,),
+    (tmp.t97, tmp.t98),
+    words.the,
+    pseudo-words.cathedral,
+    pseudo-words.p18n,
+    sym.bullet,
+  ),
+  (
+    words.the,
+    (tmp.t76, tmp.t99, phon.d),
+    (tmp.t100,),
+    (phon.s, tmp.t101, tmp.t5, phon.d),
+    words.into,
+    words.a,
+    (phon.s, phon.k, tmp.t102, tmp.t103, tmp.t104),
+    (tmp.t105, phon.l),
+    ",",
+    (phon.o, tmp.t76),
+  ),
+  (
+    (tmp.t106,),
+    (phon.bee, tmp.t107, tmp.t60, tmp.t104),
+    words.and,
+    (tmp.t106,),
+    (phon.un, phon.d), // ???
+    sym.bullet,
+    (phon.f, tmp.t58),
+    words.to,
+    (tmp.t108,),
+    (tmp.t109, phon.s),
+    ",",
+  ),
+  (
+    (tmp.t41, phon.d),
+    (phon.wo, phon.n, phon.z), // Wons?
+    ",",
+    words.and,
+    words.become,
+    (tmp.t108,),
+    (phon.p, tmp.t22, tmp.t110, phon.s, tmp.t86, phon.n, phon.d),
+    (tmp.t46, phon.l, tmp.t3, phon.z),
+    "!",
   ),
 )
 

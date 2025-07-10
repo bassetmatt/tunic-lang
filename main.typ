@@ -2,9 +2,7 @@
 #import "list.typ": *
 #import "pages.typ": pages
 #import "utils.typ": char_table, render_dict, render_pages
-#set page(height: 30cm, margin: .5cm)
-
-
+#set page(height: 33cm, margin: .5cm)
 
 
 == Words with high level of certainty

@@ -109,7 +109,7 @@
   for i in range(0, pages.len()) {
     heading(level: 3)[Page #(i + 1)]
     for line in pages.at(i) {
-      render_line(line)
+      render_line(line, tmp: tmp)
     }
   }
 }
